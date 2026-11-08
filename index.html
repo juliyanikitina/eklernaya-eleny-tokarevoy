@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="./style.css">
   <script src="./media.js" defer></script>
   <script src="./app.js" defer></script>
+  <script src="./ambience.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#collection">К коллекции десертов</a>
@@ -72,5 +73,11 @@
   <footer class="footer wrap"><p class="footer-brand">Эклерная Елены Токаревой</p><p><a href="https://www.instagram.com/eklernaya22/" target="_blank" rel="noopener noreferrer">Instagram эклерной ↗</a></p><p>Пробная витрина · 2026</p><p class="fineprint">Изображения — художественная подача по исходным фотографиям. Состав и оформление уточняются.</p></footer>
 
   <dialog id="dessert-dialog" class="dessert-dialog" aria-labelledby="detail-title"><div class="detail-shell"><button id="close-dialog" class="close-dialog" aria-label="Закрыть описание десерта">×</button><div class="detail-image"><img id="detail-image" src="./assets/raspberry.webp" alt="" width="1536" height="1024"><video id="detail-video" poster="./assets/raspberry.webp" controls playsinline loop preload="none" hidden></video><button id="video-toggle" class="video-toggle" hidden><span aria-hidden="true">▶</span> Смотреть раскрытие</button></div><div class="detail-copy"><p id="detail-category" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-description" class="detail-description"></p><p class="detail-label">В разрезе</p><ul id="detail-layers"></ul><div class="detail-nav"><button id="previous-dessert" class="arrow-button" aria-label="Предыдущий десерт">←</button><span id="detail-index"></span><button id="next-dessert" class="arrow-button" aria-label="Следующий десерт">→</button></div></div></div></dialog>
+  <aside class="ambience" aria-label="Музыкальное настроение">
+    <button id="music-toggle" class="music-toggle" aria-pressed="false" aria-label="Включить музыку Франции"><span class="music-note" aria-hidden="true">♫</span><span id="music-label">Музыка Франции</span></button>
+    <label id="music-volume-control" class="music-volume" hidden><span>Громкость</span><input id="music-volume" type="range" min="0" max="60" value="22" step="1" aria-label="Громкость музыки"></label>
+    <span id="music-status" class="sr-only" aria-live="polite"></span>
+    <audio id="ambience-audio" loop preload="none"></audio>
+  </aside>
 </body>
 </html>
