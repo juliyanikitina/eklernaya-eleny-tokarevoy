@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="Эклерная Елены Токаревой. Коллекция корпусных десертов: фисташка, малина, ежевика, голубика, лимон и манго. Рассмотрите каждый вкус в разрезе.">
+  <meta property="og:title" content="Эклерная Елены Токаревой — десерты с характером">
+  <meta property="og:description" content="Тонкая оболочка, нежный мусс и маленькая история внутри. Откройте коллекцию корпусных десертов.">
+  <meta property="og:image" content="https://dessert-atelier-julia.juliya-nikitina-ai.chatgpt.site/assets/raspberry.webp">
+  <meta property="og:type" content="website">
+  <title>Эклерная Елены Токаревой — десерты с характером</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/fonts/prata-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/raspberry.webp" as="image">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./media.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#collection">К коллекции десертов</a>
+  <header class="header wrap">
+    <a class="brand" href="#top" aria-label="Эклерная Елены Токаревой — наверх">
+      <svg class="brand-mark" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M8 28c1-12 8-19 14-19s13 7 14 19M8 28h28M11 32h22M18 10c-3 7-4 11-4 18m8-19v19m4-18c3 7 4 11 4 18" stroke="currentColor" stroke-width="1.2"/><path d="M3 28h38" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span><span class="brand-title">Эклерная</span><span class="brand-sub">Елены Токаревой</span></span>
+    </a>
+    <nav aria-label="Основная навигация"><a href="#collection">Коллекция</a><a href="#inside">Что внутри</a></nav>
+    <a class="header-link" href="#collection">Выбрать свой вкус <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-line"></span> Маленькая форма. Большое удовольствие.</p>
+        <h1 id="hero-title">Красиво<br>снаружи.<br><em>Нежно</em> внутри.</h1>
+        <p class="hero-description">Тонкая оболочка, воздушный мусс<br class="desktop-break"> и начинка, в которую влюбляешься<br class="desktop-break"> с первой ложки.</p>
+        <a class="button primary" href="#collection">Открыть коллекцию <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Корпусные десерты · Коллекция вкусов</p>
+      </div>
+      <figure class="hero-figure">
+        <button class="hero-image-button" data-open="raspberry" aria-label="Рассмотреть десерт Малина крупным планом">
+          <img src="./assets/raspberry.webp" width="1536" height="1024" alt="Малиновое пирожное на белой фарфоровой тарелке: целая ягода и разрез со сливочным муссом и ягодной сердцевиной" fetchpriority="high">
+          <span class="image-corner" aria-hidden="true">↗</span>
+        </button>
+        <figcaption><span><span class="caption-index">01 / 06</span> Малина</span><button class="text-button" data-open="raspberry">Рассмотреть начинку <span aria-hidden="true">↗</span></button></figcaption>
+      </figure>
+    </section>
+
+    <div class="intro-line wrap"><span>Сначала — глазами.</span><span class="intro-star" aria-hidden="true">✳</span><span>Потом — с удовольствием.</span></div>
+
+    <section id="collection" class="collection wrap" aria-labelledby="collection-title">
+      <div class="section-heading"><div><p class="eyebrow">Коллекция корпусных десертов</p><h2 id="collection-title">Какой вкус — <em>ваш?</em></h2></div><p>Знакомая форма. <br>Неожиданно нежная история внутри.</p></div>
+      <div class="collection-toolbar"><div class="filters" role="group" aria-label="Выбрать категорию десертов"><button data-filter="all" aria-pressed="true">Все вкусы <span>06</span></button><button data-filter="berry" aria-pressed="false">Ягодные</button><button data-filter="nut" aria-pressed="false">Ореховые</button><button data-filter="fruit" aria-pressed="false">Фруктовые</button></div><div class="collection-controls"><button id="motion-toggle" class="text-button" aria-pressed="true" hidden>Пауза видео</button><span id="result-count" aria-live="polite">6 десертов</span></div></div>
+      <div class="dessert-grid" id="dessert-grid"></div>
+    </section>
+
+    <section id="inside" class="inside" aria-labelledby="inside-title">
+      <div class="inside-layout wrap">
+        <figure class="inside-photo"><img src="./assets/pistachio.webp" alt="Разрез фисташкового десерта: зелёная оболочка, нежный крем, пралине и бисквит" width="1536" height="1024" loading="lazy"><figcaption>Фисташка · Вся нежность в деталях</figcaption></figure>
+        <div class="inside-copy"><p class="eyebrow">У каждого вкуса есть глубина</p><h2 id="inside-title">Маленькая<br>история<br><em>в трёх слоях.</em></h2><dl class="layers"><div><dt><span>01</span> Тонкая оболочка</dt><dd>Первый лёгкий надлом — и десерт раскрывает свой характер.</dd></div><div><dt><span>02</span> Воздушная нежность</dt><dd>Мягкий крем или мусс, который хочется смаковать медленно.</dd></div><div><dt><span>03</span> Самое интересное внутри</dt><dd>Ягодная сердцевина, фруктовая начинка или фисташковое пралине.</dd></div></dl><button class="text-button" data-open="pistachio">Посмотреть фисташку в разрезе <span aria-hidden="true">↗</span></button></div>
+      </div>
+    </section>
+
+    <section class="closing wrap" aria-labelledby="closing-title"><p class="eyebrow">Эклерная Елены Токаревой</p><h2 id="closing-title">Удовольствие<br>в <em>маленьких деталях.</em></h2><a class="button primary" href="#collection">Найти любимый десерт <span aria-hidden="true">↑</span></a></section>
+  </main>
+
+  <footer class="footer wrap"><p class="footer-brand">Эклерная Елены Токаревой</p><p>Пробная витрина · 2026</p><p class="fineprint">Изображения — художественная подача по исходным фотографиям. Состав и оформление уточняются.</p></footer>
+
+  <dialog id="dessert-dialog" class="dessert-dialog" aria-labelledby="detail-title"><div class="detail-shell"><button id="close-dialog" class="close-dialog" aria-label="Закрыть описание десерта">×</button><div class="detail-image"><img id="detail-image" src="./assets/raspberry.webp" alt="" width="1536" height="1024"><video id="detail-video" poster="./assets/raspberry.webp" controls playsinline loop preload="none" hidden></video><button id="video-toggle" class="video-toggle" hidden><span aria-hidden="true">▶</span> Смотреть раскрытие</button></div><div class="detail-copy"><p id="detail-category" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-description" class="detail-description"></p><p class="detail-label">В разрезе</p><ul id="detail-layers"></ul><div class="detail-nav"><button id="previous-dessert" class="arrow-button" aria-label="Предыдущий десерт">←</button><span id="detail-index"></span><button id="next-dessert" class="arrow-button" aria-label="Следующий десерт">→</button></div></div></div></dialog>
+</body>
+</html>
